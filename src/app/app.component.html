@@ -10,6 +10,7 @@
 
 <div class="content" role="main">
 
+  <!-- Reactive Form to configure `@ngx-web3/ui-payment-btn` params options -->
   <form *ngIf="form" [formGroup]="form">
     <fieldset>
       <legend>Configure payment button</legend>
@@ -37,7 +38,6 @@
       </div>
     </fieldset>
   </form>
-
   <hr/>
 
   <form>
@@ -46,12 +46,19 @@
       <p>
         <b>Price: $ {{form?.value?.amount}} USD</b>
       </p>
+      <!-- 
+          Here `@ngx-web3/ui-payment-btn` demo using `Rreactive From` data value
+          You can also use static value or dynamic class property.
+          
+          Note: to bind dynamic value, you need to use `[attr.ATTRBUT_TO_SET]="YOUR_VALUE"` syntax as below
+       -->
       <ngxweb3-payment-btn
           chainid="61"
           [attr.to]="form?.value?.to"
-          [attr.symbol]="form?.value?.symbol"
+          [attr.symbol]="form?.value?.symbol"s
           [attr.amount]="form?.value?.amount"
           display-error="true"></ngxweb3-payment-btn>
+
     </fieldset>
   </form>
 
