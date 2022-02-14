@@ -10,25 +10,42 @@
 
 <div class="content" role="main">
 
+  <h1>
+    <i>@ngx-web3/ui-payment-btn</i>
+  </h1>
+
+  <p>
+    <i>@ngx-web3/ui-payment-btn</i> is a simple HTML UI Crypto Payment Button Component that allows your to provide decentralized USD transaction payment solution with <a href="https://ethereum.org/en/">Ethereum (ETH)</a>, <a href="https://www.binance.com/">Binance (BNB)</a> or <a href="https://solana.com/">Solana (SOL)</a> token. 
+    It includes real-time currency conversion from USD to selected token using <a href="https://www.coingecko.com/en/api">Coingecko API</a>. 
+    <br/>
+    This HTML component is a great way to provide a crypto payment button to your application or website without centralized payment provider.
+  </p>
+
+  <p>
+    <b>
+      Here you can see an example of <i>@ngx-web3/ui-payment-btn</i> usage with configurable options.
+    </b>
+  </p>
+    
   <!-- Reactive Form to configure `@ngx-web3/ui-payment-btn` params options -->
   <form *ngIf="form" [formGroup]="form">
     <fieldset>
       <legend>Configure payment button</legend>
       <div>
         <label for="amount">
-          Amount: 
+          USD Amount: 
           <input type="number" formControlName="amount" placeholder="amount" /><br/>
         </label>
       </div>
       <div>
         <label for="to">
-          To: 
+          To Address:: 
           <input type="text" formControlName="to" placeholder="your ens address" /><br/>
         </label>
       </div>
       <div>
         <label for="symbol">
-          Currency: 
+          Currency Symbol:: 
           <select title="symbol" formControlName="symbol">
             <option value="">Select a token</option>
             <option value="BNB">BNB</option>
@@ -38,6 +55,7 @@
       </div>
     </fieldset>
   </form>
+  
   <hr/>
 
   <form>
