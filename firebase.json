@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "public": "dist/PaymentBtnAngularDemo",
+    "site": "crypto-payment-btn",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
