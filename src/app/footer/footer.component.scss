@@ -1,0 +1,27 @@
+:host {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 1rem;
+  background-color: #fff;
+  color: #333;
+  font-size: 0.7rem;
+  
+  footer {
+
+    span {
+      color: red;
+    }
+
+    a {
+      color: rgb(65, 65, 65);
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+        color: #1a76d2;
+      }
+    }
+  }
+}

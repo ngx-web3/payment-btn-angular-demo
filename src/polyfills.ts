@@ -60,3 +60,6 @@ if (window && (window as any).global === undefined) {
     env: { DEBUG: undefined }
   } as any;
 }
+
+// allow Share API to be used in browser
+import 'share-api-polyfill';

@@ -1,0 +1,57 @@
+:host {
+
+  .toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
+  }
+
+  .toolbar img {
+    margin: 0 16px;
+  }
+
+
+  .content {
+    display: flex;
+    margin: 82px auto 32px;
+    padding: 0 16px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  div.formContainer {
+  }
+  form {
+    margin: 1rem;
+    width: auto;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  fieldset {
+    display: inline-block;
+  }
+  div {
+    margin-bottom: 10px;
+  }
+  label {
+    display: block;
+    color: #888;
+  }
+  input, select {
+    width: 100%;
+  }
+
+
+}
